@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Murillo | Portafolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117; /* Colores inspirados en el tema oscuro de GitHub */
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-color: #58a6ff;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            border-color: var(--text-muted);
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            background-color: #21262d;
+            transition: background-color 0.2s;
+        }
+
+        .links a:hover {
+            background-color: #30363d;
+        }
+        
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- He agregado la imagen de tu perfil de GitHub -->
+            <img src="https://avatars.githubusercontent.com/andresmu" alt="Andrés Murillo" class="avatar">
+            <h1>Andrés Murillo</h1>
+            <p class="subtitle">@andresmu | Desarrollador</p>
+        </header>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Bienvenido a mi portafolio personal alojado en GitHub Pages. Aquí puedes explorar mis proyectos, código y mi experiencia como desarrollador.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Repositorios Destacados</h2>
+            <div class="grid">
+                <!-- Tu repositorio de GitHub Pages como ejemplo -->
+                <div class="card">
+                    <h3>📁 andresmu.github.io</h3>
+                    <p>Mi portafolio personal básico desplegado usando GitHub Pages. Sirve como tarjeta de presentación y muestra de mi trabajo.</p>
+                    <div class="links">
+                        <a href="https://andresmu.github.io" target="_blank">Ver Sitio</a>
+                        <a href="https://github.com/andresmu/andresmu.github.io" target="_blank">Ver Código</a>
+                    </div>
+                </div>
+
+                <!-- Tarjeta genérica por si quieres agregar más repositorios que tengas en el futuro -->
+                <div class="card">
+                    <h3>📁 Otro Proyecto</h3>
+                    <p>Aquí puedes agregar la descripción de otro de tus repositorios interesantes disponibles en tu GitHub.</p>
+                    <div class="links">
+                        <a href="https://github.com/andresmu" target="_blank">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto y Redes</h2>
+            <div class="contact-links">
+                <a href="https://github.com/andresmu" target="_blank">Mi GitHub</a>
+                <!-- Puedes cambiar el enlace de LinkedIn por el tuyo real -->
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
